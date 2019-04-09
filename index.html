@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+<body>
+    <main>
+        <section style="margin-top: 10px">
+        <label for="a">Ticket Nº</label>
+        <input type="text" id="a" >
+    </section>
+    <section style="margin-top: 10px">
+        <label for="a">Mesa</label>
+        <select name="caja" id="mesa">
+          <option value="m1">M1</option>
+          <option value="m2">M2</option>
+          <option value="m3">M3</option>
+          <option value="m4">M4</option>
+        </select>
+    </section>
+    <section style="margin-top: 10px">
+        <label for="a">Cliente</label>
+        <input type="text" id="nombre">
+        <label for="a">DNI</label>
+        <input type="text"  id="Dni">
+    </section>
+    <section style="margin-top: 10px">
+        <label for="a">Plato</label>
+        <select name="" id="d">
+             <option value="1">Ceviche</option>
+            <option value="1">Chicharron de pescado</option>
+           <option value="1">Leche de tigre</option>
+            <option value="1">Arroz con mariscos</option>
+          <option value="1">Choritos a la chalaca</option>
+        </select style="margin-top: 10px">
+        <label for="a">Precio</label>
+        <input type="number" id="e">
+        <label for="a">Cantidad</label>
+        <input type="number" name="" id="f">
+    </section >
+    <section style="margin-top: 10px">
+        <input type="submit" style="background: aqua" value="ADD" onclick="guardar()">
+    </section>
+    
+    <section style="margin-top: 10px">
+           
+        <table  width="50%" border="1" cellpadding="0" cellspacing="0" bordercolor="#000000" >
+            <tr >
+             <td>Ticket</td>
+             <td>Mesa</td>
+             <td>Cliente</td>
+             <td>DNI</td>
+         </tr>
+         
+         <tbody id="h">
+         </tbody>
+         <button onclick="myDeleteFunction()">Borrar Cliente</button>
+                </table>
+        
+    </section>
+    <section style="margin-top: 40px">
+        <table width="50%" border="1" bordercolor="#000000" >
+            
+            <tr>
+                <td>ID</td>
+            <td>Plato</td>
+            <td>Precio</td>
+            <td>Cantidad</td>
+            <td>Importe</td>
+            </tr>
+               <tbody id="i">
+                   
+               </tbody>     
+               <button onclick="DeleteFunction()">Borrar pedido</button>
+        </table>
+        </section>
+    </main>
+    <script src="scrip.js"></script> 
+    
+</body>
+</html>
